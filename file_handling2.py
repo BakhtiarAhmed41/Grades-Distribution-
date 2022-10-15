@@ -1,0 +1,23 @@
+def distribution(a):
+    gfile = open(a, "r")
+    read = gfile.read()
+    gfile.close()
+    count1 = read.count("A")
+    print("\nThe number of students who got A: ", count1)
+    count2 = read.count("A-")
+    print("The number of students who got A-: ", count2)
+    count3 = read.count("B+")
+    print("The number of students who got B+: ", count3)
+    count4 = read.count("B")
+    print("The number of students who got B: ", count4)
+    count5 = read.count("B-")
+    print("The number of students who got B-: ", count5)
+    count6 = read.count("C")
+    print("The number of students who got C: ", count6)
+    count7 = read.count("C-")
+    print("The number of students who got C-: ", count7)
+    count8 = read.count("F")
+    print("The number of students who got F: ", count8)
+
+
+distribution(r"C:\Users\Desktop\grades.txt")
